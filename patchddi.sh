@@ -13,24 +13,10 @@ do
 	chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
 	chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
 done
-for i in com.apple.ps.plist
-do
-        ln -s ../../../bin/ps /Volumes/DeveloperDiskImage/usr/bin/
-	cp $i /Volumes/DeveloperDiskImage/Library/LaunchDaemons/
-        chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-        chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-done
 hdiutil detach /Volumes/DeveloperDiskImage
 hdiutil attach -owners on DeveloperDiskImageModified_16.0.dmg
 for i in com.apple.debugserver.plist
 do
-        cp $i /Volumes/DeveloperDiskImage/Library/LaunchDaemons/
-        chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-        chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-done
-for i in com.apple.ps.plist
-do
-        ln -s ../../../bin/ps /Volumes/DeveloperDiskImage/usr/bin/
         cp $i /Volumes/DeveloperDiskImage/Library/LaunchDaemons/
         chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
         chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
@@ -43,13 +29,6 @@ do
         chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
         chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
 done
-for i in com.apple.ps.plist
-do
-        ln -s ../../../bin/ps /Volumes/DeveloperDiskImage/usr/bin/
-        cp $i /Volumes/DeveloperDiskImage/Library/LaunchDaemons/
-        chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-        chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-done
 hdiutil detach /Volumes/DeveloperDiskImage
 hdiutil attach -owners on DeveloperDiskImageModified_15.6.dmg
 for i in com.apple.debugserver.plist
@@ -58,24 +37,10 @@ do
         chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
         chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
 done
-for i in com.apple.ps.plist
-do
-        ln -s ../../../bin/ps /Volumes/DeveloperDiskImage/usr/bin/
-        cp $i /Volumes/DeveloperDiskImage/Library/LaunchDaemons/
-        chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-        chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-done
 hdiutil detach /Volumes/DeveloperDiskImage
 hdiutil attach -owners on DeveloperDiskImageModified_15.5.dmg
 for i in com.apple.debugserver.plist
 do
-        cp $i /Volumes/DeveloperDiskImage/Library/LaunchDaemons/
-        chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-        chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
-done
-for i in com.apple.ps.plist
-do
-        ln -s ../../../bin/ps /Volumes/DeveloperDiskImage/usr/bin/
         cp $i /Volumes/DeveloperDiskImage/Library/LaunchDaemons/
         chown root:wheel /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
         chmod 644 /Volumes/DeveloperDiskImage/Library/LaunchDaemons/$i
